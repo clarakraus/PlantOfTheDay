@@ -3,18 +3,32 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.github.gossie</groupId>
-        <artifactId>spring-boot-react-bundle-parent</artifactId>
+        <groupId>com.github.clarakraus</groupId>
+        <artifactId>plant-of-the-day-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>spring-boot-react-bundle-backend</artifactId>
+    <artifactId>plant-of-the-day-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-boot-react-bundle-backend</name>
+    <name>plant-of-the-day-backend</name>
     <description>Demo to deploy frontend and backend</description>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.4</version>
         </dependency>
 
         <dependency>
